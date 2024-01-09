@@ -43,11 +43,11 @@ export default function TextForm(props) {
 <div className="mb-3">
   <textarea className="form-control" id="myBox" rows="8" style={{backgroundColor: props.mode==='light'?'white':'gray',color: props.mode==='light'?'#042743':'white'}} value={text} onChange={handleOnChange}></textarea>
 </div>
-<button className={`btn btn-${props.mode==='light'?'dark':'light'} mx-2`} onClick={handleUpClick}>Convert to Uppercase</button>
-<button className={`btn btn-${props.mode==='light'?'dark':'light'} mx-2`} onClick={handleLoClick}>Convert to Lowercase</button>
-<button className={`btn btn-${props.mode==='light'?'dark':'light'} mx-2`} onClick={handleClearClick}>Clear Text</button>
-<button className={`btn btn-${props.mode==='light'?'dark':'light'} mx-2`} onClick={handleCopy}>Copy Text</button>
-<button className={`btn btn-${props.mode==='light'?'dark':'light'} mx-2`} onClick={handleExtraSpaces}>Remove Extra Spaces</button>
+<button className={`btn btn-${props.mode==='light'?'dark':'light'} mx-2 my-2`} onClick={handleUpClick}>Convert to Uppercase</button>
+<button className={`btn btn-${props.mode==='light'?'dark':'light'} mx-2 my-2`} onClick={handleLoClick}>Convert to Lowercase</button>
+<button className={`btn btn-${props.mode==='light'?'dark':'light'} mx-2 my-2`} onClick={handleClearClick}>Clear Text</button>
+<button className={`btn btn-${props.mode==='light'?'dark':'light'} mx-2 my-2`} onClick={handleCopy}>Copy Text</button>
+<button className={`btn btn-${props.mode==='light'?'dark':'light'} mx-2 my-2`} onClick={handleExtraSpaces}>Remove Extra Spaces</button>
 <div className="container my-3">
   <h1>Your Text Summary</h1>
   <p>{text.split(" ").length} words and {text.length} characters</p>
